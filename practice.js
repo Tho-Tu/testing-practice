@@ -79,6 +79,10 @@ function caesarCipher(string, shift) {
 }
 
 function analyzeArray(array) {
+  if (!isValidArray(array)) {
+    return "not an array";
+  }
+
   let average =
     array.reduce((accumulator, currentValue) => {
       return accumulator + currentValue;
